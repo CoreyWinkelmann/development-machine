@@ -30,3 +30,8 @@ fi
 
 echo "Setup/Update to latest stable release"
 asdf update
+
+if ! command -v ag &> /dev/null
+then
+	sudo apt-get install -y silversearcher-ag
+fi
