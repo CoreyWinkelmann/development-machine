@@ -10,3 +10,5 @@ email = cawinkelmann@gmail.com
 	required = true
 [init]
 	defaultBranch = main
+[pull]
+	ff = only
