@@ -62,6 +62,8 @@ nmap <silent> <c-k> <c-w>k
 nmap <silent> <c-h> <c-w>h
 nmap <silent> <c-l> <c-w>l
 
+map <leader>y "*y
+
 let g:deoplete#enable_at_startup = 1
 let g:tagbar_type_go = {
 	\ 'ctagstype' : 'go',
@@ -92,3 +94,22 @@ let g:tagbar_type_go = {
 \ }
 
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+
+filetype plugin on
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+" set smartindent
+set laststatus=2
+set showmatch
+set incsearch
+
+au FileType go nmap <S-F5> :GoDebugStop<CR>
+au FileType go nmap <F5> :GoDebugContinue<CR>
+au FileType go nmap <F9> :GoDebugBreakpoint<CR>
+au FileType go nmap <F10> :GoDebugNext<CR>
+au FileType go nmap <F11> :GoDebugStep<CR>
+au FileType go nmap <S-F11> :GoDebugStepOut<CR>
