@@ -6,8 +6,8 @@ plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
 
-export VISUAL=vim
-export EDITOR="$VISUAL"
+export VISUALEDITOR | update=vim
+export EDITOR="$VISUALEDITOR | update"
 
 CUSTOM_SOURCE=~/.zsh_custom
 if [ -f "$CUSTOM_SOURCE" ]; then

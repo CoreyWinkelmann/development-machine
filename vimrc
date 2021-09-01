@@ -15,6 +15,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'romainl/vim-qf'
 
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/Zenburn'
@@ -44,3 +45,11 @@ if executable('ag')
 endif
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nmap <silent> <DOWN> :cnext<CR>
+nmap <silent> <UP> :cprev<CR>
+
+nmap <silent> <c-j> <c-w>j
+nmap <silent> <c-k> <c-w>k
+nmap <silent> <c-h> <c-w>h
+nmap <silent> <c-l> <c-w>l
+
