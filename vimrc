@@ -16,6 +16,15 @@ Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'romainl/vim-qf'
+Plug 'preservim/tagbar'
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/Zenburn'
@@ -53,3 +62,33 @@ nmap <silent> <c-k> <c-w>k
 nmap <silent> <c-h> <c-w>h
 nmap <silent> <c-l> <c-w>l
 
+let g:deoplete#enable_at_startup = 1
+let g:tagbar_type_go = {
+	\ 'ctagstype' : 'go',
+	\ 'kinds'     : [
+		\ 'p:package',
+		\ 'i:imports:1',
+		\ 'c:constants',
+		\ 'v:variables',
+		\ 't:types',
+		\ 'n:interfaces',
+		\ 'w:fields',
+		\ 'e:embedded',
+		\ 'm:methods',
+		\ 'r:constructor',
+		\ 'f:functions'
+	\ ],
+	\ 'sro' : '.',
+	\ 'kind2scope' : {
+		\ 't' : 'ctype',
+		\ 'n' : 'ntype'
+	\ },
+	\ 'scope2kind' : {
+		\ 'ctype' : 't',
+		\ 'ntype' : 'n'
+	\ },
+	\ 'ctagsbin'  : 'gotags',
+	\ 'ctagsargs' : '-sort -silent'
+\ }
+
+call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })

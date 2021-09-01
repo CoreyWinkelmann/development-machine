@@ -8,6 +8,13 @@ THISDIR=$(pwd)
 ln -s $THISDIR/vimrc ~/.vimrc
 ln -s $THISDIR/gitconfig ~/.gitconfig
 
+if ! command -v pip3 &> /dev/null
+then
+	echo "Please install pip3 for vim deoplete usage and run setup.sh again"
+	exit
+fi
+pip3 install --user --upgrade pynvim
+
 # Setup Vim Plugins
 vim +PlugInstall +qall
 
