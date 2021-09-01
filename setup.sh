@@ -17,3 +17,7 @@ if [ ! -f "$ZSHRC" ]; then
 	ln -s $(pwd)/zshrc ~/.zshrc
 fi
 
+ASDF=~/.asdf
+if [ ! -f "$ASDF" ]; then
+	git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+fi
