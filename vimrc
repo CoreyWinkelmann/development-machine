@@ -6,7 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'LnL7/vim-nix'
 
 Plug 'SirVer/ultisnips'
@@ -113,3 +113,15 @@ au FileType go nmap <F9> :GoDebugBreakpoint<CR>
 au FileType go nmap <F10> :GoDebugNext<CR>
 au FileType go nmap <F11> :GoDebugStep<CR>
 au FileType go nmap <S-F11> :GoDebugStepOut<CR>
+
+" augroup auto_go
+"     autocmd!
+
+"     nmap <S-F5> :GoDebugStop<CR>
+"     nmap <F5> :GoDebugContinue<CR>
+"     nmap <F9> :GoDebugBreakpoint<CR>
+"     nmap <F10> :GoDebugNext<CR>
+"     nmap <F11> :GoDebugStep<CR>
+"     nmap <S-F11> :GoDebugStepOut<CR>
+" augroup end
+let g:go_metalinter_autosave=1
