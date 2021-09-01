@@ -10,7 +10,6 @@ ln -s $THISDIR/gitconfig ~/.gitconfig
 
 # Setup Vim Plugins
 vim +PlugInstall +qall
-vim +GoInstallBinaries +qall
 
 ZSHRC=~/.zshrc
 if [ ! -f "$ZSHRC" ]; then
