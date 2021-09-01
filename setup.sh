@@ -29,7 +29,4 @@ if [[ ! -d "$ASDF" ]]; then
 fi
 
 echo "Setup/Update to latest stable release"
-cd ~/.asdf
 asdf update
-
-cd $THISDIR
