@@ -123,5 +123,11 @@ au FileType go nmap <S-F11> :GoDebugStepOut<CR>
 "     nmap <F10> :GoDebugNext<CR>
 "     nmap <F11> :GoDebugStep<CR>
 "     nmap <S-F11> :GoDebugStepOut<CR>
+
+    " autocmd BufWritePost *.go :GoTest
+    " autocmd BufWritePost *_test.go :GoTest
 " augroup end
-let g:go_metalinter_autosave=1
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['deadcode', 'errcheck', 'gosimple', 'govet', 'ineffassign', 'staticcheck', 'structcheck', 'typecheck', 'unused', 'varcheck', 'gofmt']
+let g:go_metalinter_command = "golangci-lint"
+let g:go_list_type = 'quickfix'
