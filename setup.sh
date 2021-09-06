@@ -14,6 +14,8 @@ then
 	exit
 fi
 pip3 install --user --upgrade pynvim
+pip3 install --user --upgrade notedown
+pip3 install --user --upgrade jedi
 
 # Setup Vim Plugins
 vim +PlugInstall +qall

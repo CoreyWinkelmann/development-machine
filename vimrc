@@ -18,6 +18,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'romainl/vim-qf'
 Plug 'preservim/tagbar'
 
+Plug 'szymonmaszke/vimpyter'
+Plug 'deoplete-plugins/deoplete-jedi'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -131,3 +134,7 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['deadcode', 'errcheck', 'gosimple', 'govet', 'ineffassign', 'staticcheck', 'structcheck', 'typecheck', 'unused', 'varcheck', 'gofmt']
 let g:go_metalinter_command = "golangci-lint"
 let g:go_list_type = 'quickfix'
+
+autocmd Filetype ipynb nmap <silent><Leader>b :VimpyterInsertPythonBlock<CR>
+autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
+autocmd Filetype ipynb nmap <silent><Leader>n :VimpyterStartNteract<CR>
