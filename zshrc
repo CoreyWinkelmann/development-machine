@@ -2,7 +2,7 @@ export ZSH="/home/cagenix/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git asdf)
+plugins=(git asdf history-substring-search vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
