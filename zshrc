@@ -1,4 +1,5 @@
-export ZSH="/home/cagenix/.oh-my-zsh"
+export HOME_DIRECTORY=$(eval echo ~$USER)
+export ZSH="${HOME_DIRECTORY}/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
