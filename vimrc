@@ -35,7 +35,7 @@ Plug 'vim-scripts/Zenburn'
 call plug#end()
 
 let mapleader=","
-set clipboard+=unnamedplus
+set clipboard+=unnamed
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -134,6 +134,7 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['deadcode', 'errcheck', 'gosimple', 'govet', 'ineffassign', 'staticcheck', 'structcheck', 'typecheck', 'unused', 'varcheck', 'gofmt']
 let g:go_metalinter_command = "golangci-lint"
 let g:go_list_type = 'quickfix'
+
 
 autocmd Filetype ipynb nmap <silent><Leader>b :VimpyterInsertPythonBlock<CR>
 autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
