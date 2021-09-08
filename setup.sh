@@ -13,6 +13,7 @@ then
 	echo "Please install pip3 for vim deoplete usage and run setup.sh again"
 	exit
 fi
+pip3 install --user --upgrade jupyter
 pip3 install --user --upgrade pynvim
 pip3 install --user --upgrade notedown
 pip3 install --user --upgrade jedi
