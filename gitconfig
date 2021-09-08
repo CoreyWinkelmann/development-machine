@@ -12,3 +12,5 @@ email = cawinkelmann@gmail.com
 	defaultBranch = main
 [pull]
 	ff = only
+[core]
+	editor = vim

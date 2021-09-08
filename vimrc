@@ -36,10 +36,12 @@ call plug#end()
 
 let mapleader=","
 set clipboard+=unnamed
+set relativenumber
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsListSnippets="<c-l>"
 
 colorscheme zenburn
 
@@ -97,6 +99,10 @@ let g:tagbar_type_go = {
 \ }
 
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 filetype plugin on
 
