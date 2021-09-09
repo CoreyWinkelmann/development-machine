@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'LnL7/vim-nix'
+Plug 'jparise/vim-graphql'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
