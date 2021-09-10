@@ -47,6 +47,7 @@ let g:UltiSnipsListSnippets="<c-l>"
 colorscheme zenburn
 
 nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 if executable('ag')
   " Use ag over grep
