@@ -2,11 +2,13 @@
 
 mv ~/.vimrc ~/vimrc_backup 2> /dev/null
 mv ~/.gitconfig ~/gitconfig_backup 2> /dev/null
+mv ~/.gitignore ~/gitconfig_backup 2> /dev/null
 
 THISDIR=$(pwd)
 
 ln -s $THISDIR/vimrc ~/.vimrc
 ln -s $THISDIR/gitconfig ~/.gitconfig
+ln -s $THISDIR/gitignore ~/.gitignore
 
 if ! command -v pip3 &> /dev/null
 then

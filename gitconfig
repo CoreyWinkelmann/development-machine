@@ -14,3 +14,4 @@ email = cawinkelmann@gmail.com
 	ff = only
 [core]
 	editor = vim
+    excludesfile = ~/.gitignore
