@@ -38,6 +38,7 @@ call plug#end()
 
 let mapleader=","
 set clipboard+=unnamed
+set nowrap
 set relativenumber
 
 let g:UltiSnipsExpandTrigger="<tab>"
