@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'LnL7/vim-nix'
 Plug 'jparise/vim-graphql'
+Plug 'hashivim/vim-terraform'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -146,6 +147,8 @@ let g:go_addtags_transform = "camelcase"
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
 
+let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 
 autocmd Filetype ipynb nmap <silent><Leader>b :VimpyterInsertPythonBlock<CR>
 autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
