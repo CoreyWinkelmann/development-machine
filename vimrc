@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'OmniSharp/omnisharp-vim', { 'do': ':OmniSharpInstall' }
 Plug 'LnL7/vim-nix'
 Plug 'jparise/vim-graphql'
 Plug 'hashivim/vim-terraform'
