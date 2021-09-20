@@ -49,6 +49,7 @@ let g:UltiSnipsListSnippets="<c-l>"
 
 colorscheme zenburn
 
+let g:NERDTreeWinSize=50
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
