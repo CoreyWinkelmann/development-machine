@@ -11,6 +11,7 @@ Plug 'OmniSharp/omnisharp-vim', { 'do': ':OmniSharpInstall' }
 Plug 'LnL7/vim-nix'
 Plug 'jparise/vim-graphql'
 Plug 'hashivim/vim-terraform'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
