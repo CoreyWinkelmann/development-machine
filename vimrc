@@ -12,7 +12,14 @@ Plug 'LnL7/vim-nix'
 Plug 'jparise/vim-graphql'
 Plug 'hashivim/vim-terraform'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+Plug 'tpope/vim-fugitive'
 
+
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-speeddating'
+Plug 'junegunn/vim-easy-align'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -106,6 +113,7 @@ let g:tagbar_type_go = {
 \ }
 set backspace=indent,eol,start
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+set completeopt=menu,preview,noinsert
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
