@@ -28,6 +28,8 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'romainl/vim-qf'
 Plug 'preservim/tagbar'
+Plug 'vim-scripts/Align'
+Plug 'vim-scripts/SQLUtilities'
 
 Plug 'szymonmaszke/vimpyter'
 Plug 'deoplete-plugins/deoplete-jedi'
@@ -161,6 +163,8 @@ let g:go_fmt_fail_silently = 1
 
 let g:terraform_fmt_on_save=1
 let g:terraform_align=1
+
+let g:sqlutil_align_comma=1
 
 autocmd Filetype ipynb nmap <silent><Leader>b :VimpyterInsertPythonBlock<CR>
 autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
