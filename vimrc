@@ -13,7 +13,10 @@ Plug 'jparise/vim-graphql'
 Plug 'hashivim/vim-terraform'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'tpope/vim-fugitive'
-
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh'
+    \ }
 
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-surround'
