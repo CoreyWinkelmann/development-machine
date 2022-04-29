@@ -22,6 +22,7 @@ pip3 install --user --upgrade jedi
 
 # Setup Vim Plugins
 vim +PlugInstall +qall
+ln -s $THISDIR/coc-settings.json ~/.vim/coc-settings.json
 
 ZSHRC=~/.zshrc
 if [ ! -f "$ZSHRC" ]; then
