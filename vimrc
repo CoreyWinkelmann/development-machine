@@ -39,6 +39,8 @@ Plug 'szymonmaszke/vimpyter'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/Zenburn'
 
+Plug 'vimwiki/vimwiki'
+
 call plug#end()
 
 let mapleader=","
@@ -328,3 +330,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+let g:vimwiki_list = [{'path': '~/wiki/work/', 'syntax': 'markdown', 'ext': '.md'},
+        \ {'path': '~/wiki/personal/', 'syntax': 'markdown', 'ext': '.md'}]
